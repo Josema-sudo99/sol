@@ -1,0 +1,53 @@
+body{ 
+  margin: 0;
+  background: linear-gradient(90deg,red,orange,yellow,rgb(0, 255, 0));
+}
+.love-img{
+  border-radius: 18px;
+  background: pink;
+  display: grid;
+  justify-items: center;
+  margin: 8rem;
+  width: 30em;
+}
+.love-text{
+  margin: 5px;
+  color: red;
+  text-align: center;
+  font-family: monospace;
+
+}
+.php{
+  margin: 23px;
+}
+.php:nth-child(odd){
+  font-size: 25px;
+  animation: rot1 3s ease-in-out infinite;
+}
+.php:nth-child(even){
+  font-size: 25px;
+  animation: rot2 3s ease-in-out infinite;
+}
+
+@keyframes rot1 {
+  0%{transform: rotate(-360deg)}
+  25%{transform: rotate(0deg)}
+  50%{transform: rotate(-360deg)}
+  75%{transform: rotate(-360deg)}
+  100%{transform: rotate(0deg)}
+}
+@keyframes rot2 {
+  0%{transform: rotate(0deg)}
+  25%{transform: rotate(360deg)}
+  50%{transform: rotate(360deg)}
+  75%{transform: rotate(0deg)}
+  100%{transform: rotate(360deg)}
+}
+
+
+.next{
+  margin-top: 80px;
+  border: none;
+  background: transparent;
+  font-size: 40px;
+}
